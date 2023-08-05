@@ -7,7 +7,11 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { sendLocation } from "../utils/sendLocation"
+
 const Contact = () => {
+   sendLocation()
+   
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -26,17 +30,18 @@ const Contact = () => {
     setLoading(true);
 
 
- emailjs.send(
-  "service_vpszwtu",
-  "template_n630mvn",
+
+emailjs.send(
+  import.meta.env.VITE_SERVICE_ID, 
+  import.meta.env.VITE_TEMPLATE_ID,
   {
     from_name: form.name,
     to_name: "Abdirizak",
     from_email: form.email,
-    to_email: "abdurazak.awil1@gmail.com",
+    to_email: import.meta.env.VITE_TO_EMAIL,
     message: form.message,
   },
-  "nb7POvqWoRlFVfSBn"
+  import.meta.env.VITE_API_KEY
 )
 
       .then(
@@ -44,8 +49,6 @@ const Contact = () => {
           setLoading(false);
          
           alert(`Hello ${form.name}! Thank you for reaching out. I'm thrilled to hear from you. I will get back to you with a smile as soon as possible. Have a fantastic day! 😊`);
-
-
 
           setForm({
             name: "",
@@ -82,6 +85,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
+              required
               type="text"
               name="name"
               value={form.name}
@@ -93,6 +97,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your email</span>
             <input
+              required
               type="email"
               name="email"
               value={form.email}
@@ -104,6 +109,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
+              required
               rows={7}
               name="message"
               value={form.message}
