@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  ansarusunna,
+  galmart,
+  boqolsoon,
   carrent,
   jobit,
   tripguide,
   threejs,
+  jiir
 } from "../assets";
 
 export const navLinks = [
@@ -117,10 +117,10 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    company_name: "Galmart supermarket",
+    icon: galmart,
+    iconBg: "orange",
+    date: "Aug 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -130,10 +130,10 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    company_name: "Galmart supermarket",
+    icon: galmart,
+    iconBg: "skyblue",
+    date: "Feb 2022 - July 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,10 +143,10 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Boqolsoon Academy",
+    icon: boqolsoon,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -156,8 +156,8 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "Ansaru Sunnah Trust Group of Schools",
+    icon: ansarusunna,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
@@ -172,33 +172,34 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "I thought it was impossible to make a website as beautiful as our product, but Abdirizak proved me wrong.",
+    name: "Anab ali",
+    designation: "Manager",
+    company: "Galmart Supermarket",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about his clients' success like Abdirizak does.",
+    name: "Abdiaziz Ahmed",
+    designation: "Princible",
+    company: "Boqolsoon Academy",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After Abdirizak optimized our website, our traffic increased by 50%. We can't thank him enough!",
+    name: "Abdirisaq Jiir",
+    designation: "Director",
+    company: "Ansaru Sunnah Trust Group of Schools",
+    image: jiir,
   },
 ];
 
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "Vans Rent",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -207,7 +208,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -249,7 +250,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
