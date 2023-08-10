@@ -7,10 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-import { sendLocation } from "../utils/sendLocation"
+
 
 const Contact = () => {
-   sendLocation()
+   
    
   const formRef = useRef();
   const [form, setForm] = useState({
