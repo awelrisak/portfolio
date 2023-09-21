@@ -57,32 +57,32 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex md:flex-col lg:flex-row items-center gap-2"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Abdirizak &nbsp;
-            <span className="sm:block hidden"> | 3D Portfolio</span>
+          <p className="text-white text-lg font-bold cursor-pointer flex ">
+            Abdurezak &nbsp;
+            <span className="lg:block hidden"> | Portfolio</span>
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.id ? "text-white font-semibold" : "text-secondary"
+              } hover:text-white text-lg md:text-xl font-medium cursor-pointer`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.id ? "text-white" : "text-secondary"
+                    active === nav.id ? "text-white font-bold" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
